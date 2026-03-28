@@ -1,20 +1,17 @@
 const { initializeApp } = require('firebase/app');
-const { getDatabase, ref } = require('firebase/database');
+const { getDatabase } = require('firebase/database');
 
-// আপনার Firebase Console থেকে Config কপি করে নিচে বসান
 const firebaseConfig = {
-  apiKey: "AIzaSyD1PPDhogcw7fBu27PkO1iuMfGFLUwMN70",
-  authDomain: "fir-55206.firebaseapp.com",
-  databaseURL: "https://fir-55206-default-rtdb.firebaseio.com",
-  projectId: "fir-55206",
-  storageBucket: "fir-55206.firebasestorage.app",
-  messagingSenderId: "24586463698",
-  appId: "1:24586463698:web:8b2f21073295ef4382400b",
-  measurementId: "G-K676BWHYR4"
+  apiKey: "AIzaSyBScBRNNMxj1RqQtTy2V1PkmBBqb0ed4rA",
+  authDomain: "lagacode-c30bf.firebaseapp.com",
+  projectId: "lagacode-c30bf",
+  storageBucket: "lagacode-c30bf.firebasestorage.app",
+  messagingSenderId: "414251734880",
+  appId: "1:414251734880:web:095a38b98bd029c87ab005"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 
-module.exports = { db, ref };
+module.exports = db;
